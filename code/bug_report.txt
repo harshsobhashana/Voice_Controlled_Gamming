@@ -1,0 +1,206 @@
+----- 03/16/25 13:18:38 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 271, in play_as
+    audio_data = r.record(source, duration=5)
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\__init__.py", line 353, in record
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\__init__.py", line 191, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\pyaudio\__init__.py", line 570, in read
+    return pa.read_stream(self._stream, num_frames,
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          exception_on_overflow)
+                          ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+Playing as BLACK:
+	g2g3
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/8/6P1/PPPPPP1P/RNBQKBNR b KQkq - 0 1
+-----------------------------
+
+----- 03/16/25 13:27:54 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 240, in play_as
+    CLOCK.tick(CLOCK_TICK)
+    ~~~~~~~~~~^^^^^^^^^^^^
+KeyboardInterrupt
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 03/16/25 13:30:46 -----
+Traceback (most recent call last):
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+                             " response")
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\gtts\tts.py", line 268, in stream
+    r = s.send(
+        request=pr,
+    ...<2 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 266, in play_as
+    output.save("Output.mp3")
+    ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\gtts\tts.py", line 335, in save
+    self.write_to_fp(f)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\gtts\tts.py", line 316, in write_to_fp
+    for idx, decoded in enumerate(self.stream()):
+                        ~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\gtts\tts.py", line 287, in stream
+    raise gTTSError(tts=self)
+gtts.tts.gTTSError: Failed to connect. Probable cause: Unknown
+
+Playing as BLACK:
+	c2c4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1
+-----------------------------
+
+----- 03/16/25 13:41:39 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 290, in play_as
+    if text[1] not in l:
+       ~~~~^^^
+IndexError: string index out of range
+
+Playing as BLACK:
+	e2e4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 1
+-----------------------------
+
+----- 03/17/25 09:48:58 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 35, in _playsoundWin
+    winCommand('open "' + sound + '" alias', alias)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 31, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 277 for command:
+        open "Output.mp3" alias playsound_0.11364382603695022
+    A problem occurred in initializing MCI.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 03/17/25 09:50:15 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 35, in _playsoundWin
+    winCommand('open "' + sound + '" alias', alias)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 31, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 277 for command:
+        open "Output.mp3" alias playsound_0.36164363053767845
+    A problem occurred in initializing MCI.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 03/17/25 11:55:54 -----
+Traceback (most recent call last):
+  File "E:\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 35, in _playsoundWin
+    winCommand('open "' + sound + '" alias', alias)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HARSH SOBHASHANA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 31, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 277 for command:
+        open "Output.mp3" alias playsound_0.3338203160071166
+    A problem occurred in initializing MCI.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
