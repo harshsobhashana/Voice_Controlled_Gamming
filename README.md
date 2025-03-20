@@ -1,22 +1,38 @@
-# Voice_Controlled_Gamming
+🎙️ Voice-Controlled Chess 🎮
+Voice-Controlled Chess is a single-player chess engine that works based on voice commands given by the user. The opponent is an AI player that makes moves using the Minimax and Alpha-Beta Pruning algorithms.
 
-Voice-Controlled Chess is a chess engine which works on the basis of voice commands given by the user. It is a single player game in which the other player is the computer which makes its move with minimax and Alpha-Beta pruning algorithms.
+📦 Modules & Libraries Used
+To install the required dependencies, use the following commands:
+=> pip install pygame speech_recognition pyaudio playsound
+⚠️ For PyAudio installation, use:
+=> pip install pipwin
+=> pipwin install pyaudio
 
-Modules and libraries used:
-Pip install pygame
-Pip install speech_recognition
-Pip install pyaudio
-Pip install playsound
+📂 Main Files
+♟️ Chess.py
+Contains valid moves logic for a chess game.
+Uses bitboard representation for the chessboard.
+Implements AI move generation using the Minimax and Alpha-Beta Pruning algorithms.
+🖥️ Gui.py
+Allows you to control board size and difficulty level.
+Provides keyboard shortcuts for different in-game actions.
 
-To install PyAudio, follow these commands:
-pip install pipwin
-pipwin install pyaudio
+🕹️ How to Play
+This is a single-player chess game where you play against an AI opponent. Your piece color (White or Black) is assigned randomly.
 
-Main files used:
-Chess.py:
-Chess.py file contains a the valid moves of a chess game and position evaluation used to make a move( bitboard representation of chess board) algorithm used to generate moves by a computer and other factors that can improve the computer choose best move.
-
-Gui.py
-With this one can control the size of the board and squares it is having escalate difficulty level, Press particular keys on keyboard to do specific functions.
-
-
+🎮 Game Controls
+▶ Start the Game: Click anywhere on the board with your mouse.
+♟️ Make a Move:
+Use the format 2836, where:
+28 → Original position (Column 2, Row 8)
+36 → New position (Column 3, Row 6)
+Alternatively, you can use chess notation (e.g., B8C6 for B8 → C6).
+If the move is invalid, you will be asked to retry.
+⌨️ Keyboard Shortcuts
+🎨 Change Board Color → Press C
+💡 Hint for Next Move → Press H
+❌ Quit the Game → Press Q
+📜 View Move List → Press P or D
+📊 Evaluate Score → Press E
+🔙 Undo Last Move → Press U
+♟️ Enjoy playing Voice-Controlled Chess! 🎙️🎮♞
