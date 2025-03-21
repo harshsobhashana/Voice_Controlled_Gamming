@@ -29,10 +29,7 @@ Use the format 2836, where:
 Alternatively, you can use chess notation (e.g., B8C6 for B8 → C6).
 If the move is invalid, you will be asked to retry.
 ⌨️ Keyboard Shortcuts
-🎨 Change Board Color → Press C
-💡 Hint for Next Move → Press H
 ❌ Quit the Game → Press Q
 📜 View Move List → Press P or D
 📊 Evaluate Score → Press E
-🔙 Undo Last Move → Press U
 ♟️ Enjoy playing Voice-Controlled Chess! 🎙️🎮♞
